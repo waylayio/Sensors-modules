@@ -1,0 +1,44 @@
+{
+  "name": "@waylay/RetrieveHeadNodeSensors",
+  "version": "0.3.4",
+  "description": "Retrieve a collection of installed sensors in the Head Node (gateway).<br>\nEndpoint: http://api-synfield.synelixis.com//v1/gateway/{gatewayID}/sensors/<br>\n\n<b>States</b>\n<ul>\n<li>Found: when an owner's sensors are found.</li>\n<li>Not Found</li>\n</ul><br>\n\n<b>Properties</b>\n<ul>\n<li>authorizationToken (e.g. Basic Z3Vlc3Q...) (if undefined, property or globalSettings)</li>\n<li>headNode (gateway) (e.g. 00:06:66...) (required, rawData or property)</li>\n</ul><br>\n\n<b>Raw Data</b>\n<ul>\n<li>sensors[] - array of sensor objects {id:,name:,service:,enabled:}</li>\n<li>sensorsStr - string of sensors: id,name,service,enabled,id,name,service,enabled,...</li>\n<li>idsStr - String of sensor IDs separated by commas</li>\n<li>namesStr - String of sensor names separated by commas</li>\n<li>servicesStr - String of sensor services separated by commas</li>\n</ul><br>",
+  "author": "Dan Dan",
+  "main": "index.js",
+  "keywords": [
+    "SynField"
+  ],
+  "waylay": {
+    "iconURL": "http://www.micronzindia.com/mic_images/mic_icon_organic.png",
+    "rawData": [
+      {
+        "parameter": "sensors",
+        "dataType": "string[]"
+      },
+      {
+        "parameter": "idsStr",
+        "dataType": "double"
+      },
+      {
+        "parameter": "namesStr",
+        "dataType": "double"
+      },
+      {
+        "parameter": "servicesStr",
+        "dataType": "double"
+      },
+      {
+        "parameter": "sensorsStr",
+        "dataType": "double"
+      }
+    ],
+    "requiredProperties": [
+      "authorizationToken",
+      "headNode"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Found",
+      "Not Found"
+    ]
+  }
+}

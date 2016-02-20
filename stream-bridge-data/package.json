@@ -1,0 +1,25 @@
+{
+  "name": "@waylay/streamBridgeData",
+  "version": "0.0.1",
+  "description": "streamData sensor, \nit returns back as the rawData what has been sent,\nIt can be used as a bridge towards other platfroms.",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "Streaming"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/right_arrow.png",
+    "rawData": [
+      {
+        "parameter": "streamData",
+        "dataType": "object"
+      }
+    ],
+    "requiredProperties": [],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Collected",
+      "Not Collected"
+    ]
+  }
+}

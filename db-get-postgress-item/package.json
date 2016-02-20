@@ -1,0 +1,22 @@
+{
+  "name": "@waylay/dbGetPostgressItem",
+  "version": "0.0.1",
+  "description": "Postgress sensor\nExample how to retreive data from the database.\nYou should change the SQL query and add info about the raw data. Input arguments are:\nAlso not that the settings in the sensor come global settings;",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "Database"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/pg.png",
+    "rawData": [],
+    "requiredProperties": [
+      "inputQuery"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Found",
+      "Not Found"
+    ]
+  }
+}

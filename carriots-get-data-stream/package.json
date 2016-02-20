@@ -1,0 +1,31 @@
+{
+  "name": "@waylay/carriotsGetDataStream",
+  "version": "0.0.2",
+  "description": "carriotsGetDataStream sensor returns back list of streams for a device.\n<br>\nIf data is found, rawData total_documents give you the number of data points in the result array.",
+  "author": "Suat",
+  "main": "index.js",
+  "keywords": [
+    "IOT Platforms"
+  ],
+  "waylay": {
+    "iconURL": "https://avatars0.githubusercontent.com/u/7299477?v=3&s=200",
+    "rawData": [
+      {
+        "parameter": "total_documents",
+        "dataType": "integer"
+      },
+      {
+        "parameter": "result",
+        "dataType": "array"
+      }
+    ],
+    "requiredProperties": [
+      "device"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Found",
+      "Not Found"
+    ]
+  }
+}

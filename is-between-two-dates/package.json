@@ -1,0 +1,59 @@
+{
+  "name": "@waylay/isBetweenTwoDates",
+  "version": "0.0.1",
+  "description": "returns InRange if the eventDate is between fromDate and untilDate.<br>\nIf UntilDate is not provided, sensor will get UntilDate by applying fromDateOffsetHours to fromDate.<br>\ne.g. fromDate is 2015-06-01 13:00 and fromDateOffsetHours is 2, UntilDate will be 2015-06-01 15:00.<br>\nDefault fromDateOffsetHours is 1 hour. Default eventDate is now.\n\n",
+  "author": "Dan Dan",
+  "main": "index.js",
+  "keywords": [
+    "Time"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/betweenDates.png",
+    "rawData": [
+      {
+        "parameter": "fromDate",
+        "dataType": "string"
+      },
+      {
+        "parameter": "untilDate",
+        "dataType": "string"
+      },
+      {
+        "parameter": "eventDate",
+        "dataType": "string"
+      },
+      {
+        "parameter": "fromDateOffsetHours",
+        "dataType": "integer"
+      },
+      {
+        "parameter": "fromDateEpoch",
+        "dataType": "integer"
+      },
+      {
+        "parameter": "untilDateEpoch",
+        "dataType": "integer"
+      },
+      {
+        "parameter": "fromDate",
+        "dataType": "Date"
+      },
+      {
+        "parameter": "untilDate",
+        "dataType": "Date"
+      }
+    ],
+    "requiredProperties": [
+      "fromDate",
+      "untilDate",
+      "eventDate",
+      "fromDateOffsetHours"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Between",
+      "Before",
+      "After"
+    ]
+  }
+}

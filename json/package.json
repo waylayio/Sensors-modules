@@ -1,0 +1,22 @@
+{
+  "name": "@waylay/JSON",
+  "version": "0.0.6",
+  "description": "Sensor you can use for testing, it retuns back message as the JSON rawData",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "General"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/json2.png",
+    "rawData": [],
+    "requiredProperties": [
+      "message"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "done",
+      "error"
+    ]
+  }
+}

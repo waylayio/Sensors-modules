@@ -1,0 +1,59 @@
+{
+  "name": "@waylay/getAssetFromSalesForce",
+  "version": "0.0.4",
+  "description": "Example of asset sensor for SalesForce\n",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "SalesForce"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/asset_sensor.png",
+    "rawData": [
+      {
+        "parameter": "ContactId",
+        "dataType": "string"
+      },
+      {
+        "parameter": "AccountId",
+        "dataType": "string"
+      },
+      {
+        "parameter": "Product2Id",
+        "dataType": "string"
+      },
+      {
+        "parameter": "SerialNumber",
+        "dataType": "integer"
+      },
+      {
+        "parameter": "InstallDate",
+        "dataType": "string"
+      },
+      {
+        "parameter": "Status",
+        "dataType": "string"
+      },
+      {
+        "parameter": "Price",
+        "dataType": "double"
+      },
+      {
+        "parameter": "Description",
+        "dataType": "string"
+      },
+      {
+        "parameter": "OwnerId",
+        "dataType": "string"
+      }
+    ],
+    "requiredProperties": [
+      "serialNumber"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Found",
+      "Not Found"
+    ]
+  }
+}

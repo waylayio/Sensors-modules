@@ -1,0 +1,35 @@
+{
+  "name": "@waylay/imageCountPersons",
+  "version": "0.0.1",
+  "description": "Counts the number of persons and faces from the still image (url).\n\n\nIf it finds persons or faces it returns state Found, with the folowing info in the raw data:\n\n<ul>\n<li>personCount</li>\n<li>faceCount</li>\n<li>objects, list of objects in raw format</li>\n</ul>\n\n\nyou will need a SIGHTHOUND_TOKEN in the global settings.\n",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "Waylay"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/persons.png",
+    "rawData": [
+      {
+        "parameter": "personCount",
+        "dataType": "integer"
+      },
+      {
+        "parameter": "faceCount",
+        "dataType": "integer"
+      },
+      {
+        "parameter": "objects",
+        "dataType": "array"
+      }
+    ],
+    "requiredProperties": [
+      "url"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Found",
+      "Not Found"
+    ]
+  }
+}

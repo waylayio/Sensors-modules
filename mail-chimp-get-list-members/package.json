@@ -1,0 +1,33 @@
+{
+  "name": "@waylay/MailChimpGETListMembers",
+  "version": "1.0.0",
+  "description": "retrieves the first 10 members for a specific list.. \n<br><br>\n<b>States</b>\n<ul>\n<li>Found: at least one member is retrieved</li>\n<li>Not Found</li>\n</ul><br>\n\n<b>Properties</b>\n<ul>\n<li>APIKey: found under your MailChimp Account > Extra > API Keys.</li>\n<li>datacenter: the last part of your APIKey (e.g. abcd...-us10, your datacenter is us10)</li>\n<li>list_id: list_id rawData from the getSubscribersList sensor</li>\n</ul><br>\n\n<b>Raw Data</b>\n<ul>\n<li>members: array of members objects (subscribed, unsubscribed, etc)</li>\n<li>total_items: number of members</li>\n</ul><br><br>\n\nSchema: https://us9.api.mailchimp.com/schema/3.0/Lists/Members/Collection.json",
+  "author": "Dan Dan",
+  "main": "index.js",
+  "keywords": [
+    "Social"
+  ],
+  "waylay": {
+    "iconURL": "http://static.mailchimp.com/web/features/icon-mailchimp-mobile.png",
+    "rawData": [
+      {
+        "parameter": "members",
+        "dataType": "string"
+      },
+      {
+        "parameter": "total_items",
+        "dataType": "double"
+      }
+    ],
+    "requiredProperties": [
+      "APIKey",
+      "datacenter",
+      "list_id"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Found",
+      "Not Found"
+    ]
+  }
+}

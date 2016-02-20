@@ -1,0 +1,27 @@
+{
+  "name": "@waylay/pingWaylayEngine",
+  "version": "1.0.2",
+  "description": "Pings the engine endpoint.\nThe input argument is either domain or if not defiend a resource. Raw data \nis time to response.",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "Waylay"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/ping.png",
+    "rawData": [
+      {
+        "parameter": "time",
+        "dataType": "double"
+      }
+    ],
+    "requiredProperties": [
+      "domain"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Alive",
+      "Not Alive"
+    ]
+  }
+}

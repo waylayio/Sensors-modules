@@ -1,0 +1,21 @@
+{
+  "name": "@waylay/dweetStats",
+  "version": "1.0.1",
+  "description": "Dweet.io sensor\n<br>\nFetches the statistical values and provide it as the rawData for waylay platform, \nfor more info, please go to the external documentation page.\n<br>\nInput parameters:\n<ul>\n<li>thing, or if NOT defined, sensor takes the resource</li>\n</ul>",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "IOT Platforms"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/dweet.png",
+    "rawData": [],
+    "requiredProperties": [
+      "thing"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Collected"
+    ]
+  }
+}

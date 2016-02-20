@@ -1,0 +1,41 @@
+{
+  "name": "@waylay/isSensorDisabled",
+  "version": "0.1.7",
+  "description": "helps to check which SynField sensors are disabled based on the property sensorsArray.<br>\n\n<b>States</b>\n<ul>\n<li>None - when all sensors are enabled.</li>\n<li>Some - when some sensors are disabled and some are enabled.</li>\n<li>All - when all sensors are disabled</li>\n<li>Not Found - when sensorArray is empty</li>\n</ul><br>\n\n<b>Properties</b>\n<ul>\n<li>sensors[] - rawData from RetrieveHeadNodeSensors sensor</li>\n</ul><br>\n\n<b>Raw Data</b>\n<ul>\n<li>disabledSensors[]</li>\n<li>enabledSensors[]</li>\n<li>disabledSensorsNames : String (e.g. sensorAName, sensorBName)</li>\n<li>disabledSensorsNames : String</li>\n</ul><br>",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "SynField"
+  ],
+  "waylay": {
+    "iconURL": "https://d2gg9evh47fn9z.cloudfront.net/thumb_COLOURBOX10105030.jpg",
+    "rawData": [
+      {
+        "parameter": "disabledSensors",
+        "dataType": "string[]"
+      },
+      {
+        "parameter": "enabledSensors",
+        "dataType": "string[]"
+      },
+      {
+        "parameter": "disabledSensorsNames",
+        "dataType": "string"
+      },
+      {
+        "parameter": "enabledSensorsNames",
+        "dataType": "string"
+      }
+    ],
+    "requiredProperties": [
+      "sensors"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "None",
+      "Some",
+      "All",
+      "Not Found"
+    ]
+  }
+}

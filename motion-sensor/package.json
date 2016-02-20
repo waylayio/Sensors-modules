@@ -1,0 +1,28 @@
+{
+  "name": "@waylay/motionSensor",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Veselin",
+  "main": "index.js",
+  "keywords": [
+    ""
+  ],
+  "waylay": {
+    "iconURL": "http://static.waylay.io/images/plugs/netatmo.jpg",
+    "rawData": [
+      {
+        "parameter": "rawData",
+        "dataType": "object"
+      }
+    ],
+    "requiredProperties": [
+      "resource"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Motion",
+      "Known Person",
+      "Unknown Person"
+    ]
+  }
+}

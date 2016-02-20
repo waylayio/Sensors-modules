@@ -1,0 +1,20 @@
+{
+  "name": "@waylay/isHolidayBelgium",
+  "version": "1.0.2",
+  "description": "Checks whether is holiday in Belgium.\n\nExample how to scrape the web site using cheerio library.",
+  "author": "Veselin Pizurica",
+  "main": "index.js",
+  "keywords": [
+    "Experimental"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/holidayBelgium.png",
+    "rawData": [],
+    "requiredProperties": [],
+    "requiredRawData": [],
+    "supportedStates": [
+      "TRUE",
+      "FALSE"
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "@waylay/isWeekday",
+  "version": "1.0.2",
+  "description": "Weekend sensor checks whether it is currently weekday\n(NOT Saturday and Sunday) in the specified time zone and returns TRUE or FALSE \n<br>\nInput arguments are:\n<ul>\n<li>timeZone, defaults to Europe/Brussels</li>\n</ul>\n\nPossible input for timeZone: <a href=\"https://en.wikipedia.org/wiki/List_of_tz_database_time_zones\" target=\"_blank\"> Time zones</a>\n<br>\n\nRaw data:\n<ul>\n<li>timestamp in UTC milis</li>\n<li>year</li>\n<li>month</li>\n<li>day</li>\n<li>hours</li>\n<li>minutes</li>\n<li>seconds</li>\n<li>dateString, in format: Mon Jun 29 2015 15:24:59 GMT+0200</li>\n</ul>",
+  "author": "Dan Dan",
+  "main": "index.js",
+  "keywords": [
+    "Time"
+  ],
+  "waylay": {
+    "iconURL": "http://icons.iconarchive.com/icons/elegantthemes/beautiful-flat-one-color/128/briefcase-icon.png",
+    "rawData": [
+      {
+        "parameter": "timestamp",
+        "dataType": "string"
+      },
+      {
+        "parameter": "year",
+        "dataType": "double"
+      },
+      {
+        "parameter": "month",
+        "dataType": "double"
+      },
+      {
+        "parameter": "day",
+        "dataType": "double"
+      },
+      {
+        "parameter": "hours",
+        "dataType": "double"
+      },
+      {
+        "parameter": "minutes",
+        "dataType": "double"
+      },
+      {
+        "parameter": "seconds",
+        "dataType": "double"
+      },
+      {
+        "parameter": "dateString",
+        "dataType": "double"
+      }
+    ],
+    "requiredProperties": [
+      "timeZone"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "TRUE",
+      "FALSE"
+    ]
+  }
+}

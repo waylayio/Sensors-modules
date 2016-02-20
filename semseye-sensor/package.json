@@ -1,0 +1,51 @@
+{
+  "name": "@waylay/semseyeSensor",
+  "version": "0.0.6",
+  "description": "Semseye sensor, count the number of visits.\n\nIf the visits input is is set to \"d\", it will use a daily count, \notherwise the hourly count will be used.\nIf you don't provide start and end time, the data will be for today.\n\nOutput:\n\n<ul>\n<li>totalHourlyVisits</li>\n<li>totalDailyVisits</li>\n<li>hourlyVisitCountList</li>\n<li>dailyVisitCountList</li>\n</ul>",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "Retail"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/semseye.png",
+    "rawData": [
+      {
+        "parameter": "totalHourlyVisits",
+        "dataType": "integer"
+      },
+      {
+        "parameter": "totalDailyVisits",
+        "dataType": "integer"
+      },
+      {
+        "parameter": "hourlyVisitCountList",
+        "dataType": "integer[]"
+      },
+      {
+        "parameter": "dailyVisitCountList",
+        "dataType": "integer[]"
+      },
+      {
+        "parameter": "startDate",
+        "dataType": "double"
+      },
+      {
+        "parameter": "endDate",
+        "dataType": "double"
+      }
+    ],
+    "requiredProperties": [
+      "device",
+      "startDate",
+      "endDate",
+      "organizationGUID",
+      "visits"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Found",
+      "Not Found"
+    ]
+  }
+}

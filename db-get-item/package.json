@@ -1,0 +1,24 @@
+{
+  "name": "@waylay/dbGetItem",
+  "version": "1.0.1",
+  "description": "Example how to retreive data from the database.\nRight now we only support mysql. \nYou should change the SQL query and add info about the raw data.\n\nInput arguments are:\n<ul>\n<li>device</li>\n<li>type, you need to put here database type, today we support only \"mysql\"</li>\n</ul>\n",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "Database"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/dbGetItem.png",
+    "rawData": [],
+    "requiredProperties": [
+      "device",
+      "type"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Found",
+      "Not Found",
+      "Not Supported"
+    ]
+  }
+}

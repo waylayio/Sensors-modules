@@ -1,0 +1,27 @@
+{
+  "name": "@waylay/proximusLatestValue",
+  "version": "0.0.2",
+  "description": "Gives latest value for a device.\nDefault value for the stream is 1.",
+  "author": "Veselin",
+  "main": "index.js",
+  "keywords": [
+    "IOT Platforms"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/proximus.png",
+    "rawData": [],
+    "requiredProperties": [
+      "clientId",
+      "clientSecret",
+      "username",
+      "password",
+      "device",
+      "stream"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Collected",
+      "Not Collected"
+    ]
+  }
+}

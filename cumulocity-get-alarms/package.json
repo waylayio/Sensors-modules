@@ -1,0 +1,36 @@
+{
+  "name": "@waylay/cumulocityGetAlarms",
+  "version": "0.0.3",
+  "description": "cumulocityGetAlarms gives back list of alarms in rawData.\n<br>\nInput parameters are :\n<br>\n<ul>\n<li>dateFrom, ISO date format, default value is 24 hours ago</li>\n<li>dateTo, ISO date format, default date is now</li>\n</ul>",
+  "author": "Suat",
+  "main": "index.js",
+  "keywords": [
+    "IOT Platforms"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/cumulocity.png",
+    "rawData": [
+      {
+        "parameter": "alarms",
+        "dataType": "array"
+      },
+      {
+        "parameter": "statistics",
+        "dataType": "double"
+      },
+      {
+        "parameter": "self",
+        "dataType": "double"
+      }
+    ],
+    "requiredProperties": [
+      "dateFrom",
+      "dateTo"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Found",
+      "Not Found"
+    ]
+  }
+}

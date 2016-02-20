@@ -1,0 +1,35 @@
+{
+  "name": "@waylay/delay",
+  "version": "1.0.1",
+  "description": "Delay sensor. \n<br>\nInput paramter is delay in seconds, after which sensor will be in ON state.\n<br>\nRaw Data:\n<ul>\n<li>startTime, in UTC milis</li>\n<li>endTime, in UTC milis</li>\n<li>executionTime, in milis</li>\n</ul>",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "Experimental"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/delay.png",
+    "rawData": [
+      {
+        "parameter": "startTime",
+        "dataType": "long"
+      },
+      {
+        "parameter": "endTIme",
+        "dataType": "double"
+      },
+      {
+        "parameter": "executionTime",
+        "dataType": "double"
+      }
+    ],
+    "requiredProperties": [
+      "delay"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "ON",
+      "OFF"
+    ]
+  }
+}

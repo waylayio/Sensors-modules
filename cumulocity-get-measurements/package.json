@@ -1,0 +1,33 @@
+{
+  "name": "@waylay/cumulocityGetMeasurements",
+  "version": "0.0.2",
+  "description": "cumulocityGetMeasurements gives back the list of measurements in rawData (values).\n<br>\nInput parameters are :\n<br>\n<ul>\n<li>dateFrom, ISO date format, default value is 24 hours ago</li>\n<li>dateTo, ISO date format, default date is now</li>\n<li>source</li>\n</ul>\n\nin rawData, values is an object, where the key is the time, and the value is a array of measurements.\n<br>\nSeries defines types of data points in value array.",
+  "author": "Suat",
+  "main": "index.js",
+  "keywords": [
+    "IOT Platforms"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/cumulocity.png",
+    "rawData": [
+      {
+        "parameter": "values",
+        "dataType": "object"
+      },
+      {
+        "parameter": "series",
+        "dataType": "array"
+      }
+    ],
+    "requiredProperties": [
+      "dateTo",
+      "dateFrom",
+      "source"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Found",
+      "Not Found"
+    ]
+  }
+}

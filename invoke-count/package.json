@@ -1,0 +1,25 @@
+{
+  "name": "@waylay/invokeCount",
+  "version": "1.0.3",
+  "description": "Cumulative sensor\nCounts how many time was invoked.",
+  "author": "Veselin",
+  "main": "index.js",
+  "keywords": [
+    "Experimental"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/sum.png",
+    "rawData": [
+      {
+        "parameter": "count",
+        "dataType": "integer"
+      }
+    ],
+    "requiredProperties": [],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Incremented",
+      "Idle"
+    ]
+  }
+}

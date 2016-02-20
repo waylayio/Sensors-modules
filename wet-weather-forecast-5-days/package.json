@@ -1,0 +1,65 @@
+{
+  "name": "@waylay/wetWeatherForecast5Days",
+  "version": "0.2.3",
+  "description": "returns the number of days before the next wet weather.<br>\r\nIMPORTANT: The state \"Today\" means a wet weather is forecasted to be within the next 24hours, rather than on today's date. So is Next Day = 48hours, 2 Days Later = 72hours, so on.<br>\r\nNOTE: Wet weather types are defined in the script and may not include more specific terms such as tornado.<br>\r\nEndpoint: http://api.openweathermap.org/data/2.5/forecast<br>\r\n\r\n<b>States</b>\r\n<ul>\r\n<li>Not Found: no weather data can be found for given city.</li>\r\n<li>Today</li>\r\n<li>Next Day</li>\r\n<li>2 Days Later</li>\r\n<li>3 Days Later</li>\r\n<li>4 Days Later</li>\r\n<li>None: No wet weather is found within the 5 days forecast</li>\r\n</ul><br>\r\n\r\n<b>Properties</b>\r\n<ul>\r\n<li>city</li>\r\n<li>openWeatherAPIKey - required here in properties or global settines as OPENWEATHER_KEY</li>\r\n</ul><br>\r\n\r\n<b>Raw Data</b>\r\n<ul>\r\n<li>cityId</li>\r\n<li>cityName</li>\r\n<li>cityCountry</li>\r\n<li>totalRainVolume (mm)</li>\r\n<li>wetWeatherList {timestamp, timestampMS, weatherType, description, icon, rain{}, humidity}</li>\r\n<li>wetTypes (e.g. ['Rain','Drizzle','Thunderstorm','Snow'])</li>\r\n<li>avgHumidity (%)</li>\r\n<li>nextRainVolume (mm)</li>\r\n<li>daysTillNextRain (decimal, e.g. 0.8 = Today)</li>\r\n</ul><br>",
+  "author": "Dan Dan",
+  "main": "index.js",
+  "keywords": [
+    "Weather"
+  ],
+  "waylay": {
+    "iconURL": "http://upload.wikimedia.org/wikipedia/commons/1/15/OpenWeatherMap_logo.png",
+    "rawData": [
+      {
+        "parameter": "cityId",
+        "dataType": "integer"
+      },
+      {
+        "parameter": "cityName",
+        "dataType": "string"
+      },
+      {
+        "parameter": "cityCountry",
+        "dataType": "string"
+      },
+      {
+        "parameter": "totalRainVolume",
+        "dataType": "double"
+      },
+      {
+        "parameter": "wetWeatherList",
+        "dataType": "string[]"
+      },
+      {
+        "parameter": "wetTypes",
+        "dataType": "string[]"
+      },
+      {
+        "parameter": "avgHumidity",
+        "dataType": "double"
+      },
+      {
+        "parameter": "nextRainVolume",
+        "dataType": "double"
+      },
+      {
+        "parameter": "daysTillNextRain",
+        "dataType": "double"
+      }
+    ],
+    "requiredProperties": [
+      "city",
+      "openWeatherAPIKey"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Next Day",
+      "2 Days Later",
+      "3 Days Later",
+      "4 Days Later",
+      "Today",
+      "Not Found",
+      "None"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@waylay/bitcoinGetPrice",
+  "version": "1.0.1",
+  "description": "Bitcoin sensor. \nYou need mashape key to execute this sensor. \nInput parameters are:\n<ul>\n<li>currency: USD</li>\n<li>threshold</li>\n</ul>\n\n\nThe output is:\n<ul>\n<li>currency: USD</li>\n<li>price</li>\n</ul>\n\nShould you prefer other currency, you would need to change the sensor.\n\n",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "Finance"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/bitcoin.png",
+    "rawData": [],
+    "requiredProperties": [
+      "threshold",
+      "currency"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Below",
+      "Above"
+    ]
+  }
+}

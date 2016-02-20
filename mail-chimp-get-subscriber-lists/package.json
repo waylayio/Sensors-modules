@@ -1,0 +1,56 @@
+{
+  "name": "@waylay/MailChimpGETSubscriberLists",
+  "version": "1.0.3",
+  "description": "retrieves the list of subsscriber lists you have on your MailChimp account. \n<br><br>\n<b>States</b>\n<ul>\n<li>Found: at least one list is retrieved</li>\n<li>Not Found</li>\n</ul><br>\n\n<b>Properties</b>\n<ul>\n<li>APIKey: found under your MailChimp Account > Extra > API Keys.</li>\n<li>datacenter: the last part of your APIKey (e.g. abcd...-us10, your datacenter is us10)</li>\n</ul><br>\n\n<b>Raw Data</b>\n<ul>\n<li>lists: array of lists</li>\n<li>total_items: number of lists</li>\n<li>firstList: first list object</li>\n<li>lastList: last list object</li>\n<li>firstListId: Id of the first list</li>\n<li>lastListId: Id of the last list</li>\n<li>firstListName: Name of the first list</li>\n<li>lastListName: Name of the last list</li>\n</ul><br><br>\n\nSchema: https://us9.api.mailchimp.com/schema/3.0/Lists/Collection.json<br>\n\nWorks with the GETListMembers sensor to GET members for a specific list.\nhttp://kb.mailchimp.com/api/resources/lists/members/lists-members-collection",
+  "author": "Dan Dan",
+  "main": "index.js",
+  "keywords": [
+    "Social"
+  ],
+  "waylay": {
+    "iconURL": "http://static.mailchimp.com/web/features/icon-mailchimp-mobile.png",
+    "rawData": [
+      {
+        "parameter": "lists",
+        "dataType": "string[]"
+      },
+      {
+        "parameter": "firstListId",
+        "dataType": "string"
+      },
+      {
+        "parameter": "lastListId",
+        "dataType": "string"
+      },
+      {
+        "parameter": "total_items",
+        "dataType": "integer"
+      },
+      {
+        "parameter": "firstList",
+        "dataType": "double"
+      },
+      {
+        "parameter": "lastList",
+        "dataType": "double"
+      },
+      {
+        "parameter": "firstListName",
+        "dataType": "double"
+      },
+      {
+        "parameter": "lastListName",
+        "dataType": "double"
+      }
+    ],
+    "requiredProperties": [
+      "APIKey",
+      "datacenter"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Found",
+      "Not Found"
+    ]
+  }
+}

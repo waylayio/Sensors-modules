@@ -1,0 +1,27 @@
+{
+  "name": "@waylay/isURLAlive",
+  "version": "1.0.1",
+  "description": "This sensor executes a ping to the URL specified in the properties. You need mashape key for this sensor.\n\nRaw data is time to respond.",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "Internet"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/ping.png",
+    "rawData": [
+      {
+        "parameter": "time",
+        "dataType": "double"
+      }
+    ],
+    "requiredProperties": [
+      "url"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Alive",
+      "NotAlive"
+    ]
+  }
+}

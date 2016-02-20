@@ -1,0 +1,28 @@
+{
+  "name": "@waylay/emnifyEndpointConnectivitySensor",
+  "version": "0.0.6",
+  "description": "EMnify Endpoint Connectivity Sensor\n\nMonitors cellular connectivity of Endpoints fitted with EMnify SIM.\n\nExpects EMnify authentication token stored in global settings as EMNIFY_AUTH_TOKEN and endpointId as required property.\n\nhttp://www.emnify.com\n",
+  "author": "Martin Giess",
+  "main": "index.js",
+  "keywords": [
+    "Network"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/emnify.png",
+    "rawData": [
+      {
+        "parameter": "location.country.name",
+        "dataType": "string"
+      }
+    ],
+    "requiredProperties": [
+      "endpointId"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "ONLINE",
+      "ATTACHED",
+      "OFFLINE"
+    ]
+  }
+}

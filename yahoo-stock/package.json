@@ -1,0 +1,60 @@
+{
+  "name": "@waylay/yahooStock",
+  "version": "1.0.3",
+  "description": "StockSensor checks a stock (specified by ticker) against\na threshold and returns the states Above or Below (equal or below)\nInput parameters are:\n<ul>\n<li>ticker symbol, example MSFT</li>\n<li>threshold in USD </li>\n</ul>\n\nRaw Data:\n<ul>\n<li>price in USD </li>\n<li>low</li>\n<li>high</li>\n<li>volume</li>\n<li>movingAverage</li>\n<li>percent</li>\n<li>date</li>\n<li>ticker</li>\n<li>threshold</li>\n</ul>\n",
+  "author": "Veselin",
+  "main": "index.js",
+  "keywords": [
+    "Finance"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/yahooStock.png",
+    "rawData": [
+      {
+        "parameter": "price",
+        "dataType": "string"
+      },
+      {
+        "parameter": "low",
+        "dataType": "double"
+      },
+      {
+        "parameter": "high",
+        "dataType": "double"
+      },
+      {
+        "parameter": "volume",
+        "dataType": "double"
+      },
+      {
+        "parameter": "movingAverage",
+        "dataType": "double"
+      },
+      {
+        "parameter": "date",
+        "dataType": "double"
+      },
+      {
+        "parameter": "percent",
+        "dataType": "double"
+      },
+      {
+        "parameter": "ticker",
+        "dataType": "double"
+      },
+      {
+        "parameter": "threshold",
+        "dataType": "double"
+      }
+    ],
+    "requiredProperties": [
+      "ticker",
+      "threshold"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Above",
+      "Below"
+    ]
+  }
+}

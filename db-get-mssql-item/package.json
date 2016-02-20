@@ -1,0 +1,20 @@
+{
+  "name": "@waylay/dbGetMSSQLItem",
+  "version": "0.0.2",
+  "description": "Example how to retreive data from the database.\nYou should change the SQL query and add info about the raw data.",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "Database"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/mssql.png",
+    "rawData": [],
+    "requiredProperties": [],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Found",
+      "Not Found"
+    ]
+  }
+}

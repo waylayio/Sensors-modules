@@ -1,0 +1,37 @@
+{
+  "name": "@waylay/streamingDataSensor",
+  "version": "1.1.0",
+  "description": "Threshold sensor for runtime data.\n\nIt makes use of waylayUtil.getStreamData call.\n\nInput paramters are:\n<ul>\n<li>parameter (runtime name)</li>\n<li>threshold (value OR runtime parameter)</li>\n</ul>\n\nRaw data:\n<ul>\n<li>parameter result</li>\n<li>threshold</li>\n<li>data</li>\n</ul>\n",
+  "author": "Veselin",
+  "main": "index.js",
+  "keywords": [
+    "Streaming"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/streaming.png",
+    "rawData": [
+      {
+        "parameter": "parameter",
+        "dataType": "double"
+      },
+      {
+        "parameter": "threshold",
+        "dataType": "double"
+      },
+      {
+        "parameter": "data",
+        "dataType": "object"
+      }
+    ],
+    "requiredProperties": [
+      "parameter",
+      "threshold"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Below",
+      "Equal",
+      "Above"
+    ]
+  }
+}

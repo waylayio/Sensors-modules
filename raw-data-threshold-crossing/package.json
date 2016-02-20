@@ -1,0 +1,30 @@
+{
+  "name": "@waylay/rawDataThresholdCrossing",
+  "version": "1.0.5",
+  "description": "Raw threshold crossing sensor.\n\nInput parameters are:\n<ul>\n<li>node name for which we want to compute formula</li>\n<li>parameter</li>\n<li>threshold</li>\n</ul>",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "Functions"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/threshold.png",
+    "rawData": [
+      {
+        "parameter": "value",
+        "dataType": "double"
+      }
+    ],
+    "requiredProperties": [
+      "node",
+      "threshold",
+      "parameter"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Below",
+      "Equal",
+      "Above"
+    ]
+  }
+}

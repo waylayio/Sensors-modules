@@ -1,0 +1,54 @@
+{
+  "name": "@waylay/currencyLayerExchangeRate",
+  "version": "1.2.1",
+  "description": "real-time and historical exchange rates for 168 world currencies.\n<br><br>\n<b>States</b>\n<ul>\n<li>Found: at least one exchange rate is found</li>\n<li>Not Found</li>\n</ul><br>\n\n<b>Properties</b>\n<ul>\n<li>accessKey: your personal password for the currencylayer API</li>\n<li>currencies: enter multiple currencies separate with commas (e.g. USD,EUR,GBP) returns all currencies if blank.</li>\n<li>sourceCurrency: the base currency (for paid customers only, default: USD)</li>\n<li>date: retrieves the exchange rates for the given date, if not provided, retrieve the latest exchange rates (e.g. 2015-01-30)</li>\n</ul><br>\n\n<b>Raw Data</b>\n<ul>\n<li>success</li>\n<li>timestamp: timestamp in seconds since 01 January 1970 00:00:00 UTC</li>\n<li>source: base currency</li>\n<li>quotes: an object of currency pairs (e.g. {\"USDEUR\":0.904834,\"USDGBP\":0.656504})</li>\n<li>firstKey: the key of first quote (e.g. \"USDEUR\")</li>\n<li>firstValue: the value of first quote (e.g. 0.904834)</li>\n</ul><br>",
+  "author": "Dan Dan",
+  "main": "index.js",
+  "keywords": [
+    "Finance"
+  ],
+  "waylay": {
+    "iconURL": "https://cdn2.iconfinder.com/data/icons/simplus-finance/156/Layer_7-01-512.png",
+    "rawData": [
+      {
+        "parameter": "success",
+        "dataType": "string"
+      },
+      {
+        "parameter": "timestampUTC",
+        "dataType": "integer"
+      },
+      {
+        "parameter": "source",
+        "dataType": "string"
+      },
+      {
+        "parameter": "quotes",
+        "dataType": "string[]"
+      },
+      {
+        "parameter": "timestamp",
+        "dataType": "string"
+      },
+      {
+        "parameter": "timestampISO",
+        "dataType": "double"
+      },
+      {
+        "parameter": "firstRate",
+        "dataType": "double"
+      }
+    ],
+    "requiredProperties": [
+      "accessKey",
+      "currencies",
+      "sourceCurrency",
+      "date"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Found",
+      "Not Found"
+    ]
+  }
+}

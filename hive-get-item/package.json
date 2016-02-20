@@ -1,0 +1,23 @@
+{
+  "name": "@waylay/hiveGetItem",
+  "version": "0.0.1",
+  "description": "Hive query sensor using node-hive package",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "Database"
+  ],
+  "waylay": {
+    "iconURL": "http://jira.pentaho.com/secure/thumbnail/35657/_thumb_35657.png",
+    "rawData": [],
+    "requiredProperties": [
+      "table",
+      "server"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Found",
+      "Not Found"
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "name": "@waylay/FoursquareIsHereNow",
+  "version": "1.2.1",
+  "description": "lets you compare the number of persons at your foursquare venue.<br>\nEndpoint: https://api.foursquare.com/v2/venues/{venue_id}?v=20140805\n\n<b>States</b><br>\nDescribes if the number of 'hereNow' users at your venue is above, in range, or below the provided threshold and range numbers.\n<ul>\n<li>Above</li>\n<li>In Range</li>\n<li>Below</li>\n</ul><br>\n\n<b>Properties</b>\n<ul>\n<li>venue ID</li>\n<li>threshold (evaluateData())</li>\n<li>range (evaluateData())</li>\n<li>foursquare_client_id, foursquare_client_secret, required from your foursquare application in order to make the request to the foursquare server. Or be available at global settings as FOURSQUARE_CLIENT_ID & FOURSQUARE_CLIENT_SECRET</li>\n</ul><br>\n\n<b>Raw Data</b>\n<ul>\n<li>venueName: name of the venue</li>\n<li>phone - formatted phone number \"+00 1234 1234\"</li>\n<li>address - formatted address \"unit, street, postal, country\"</li>\n<li>verified : boolean</li>\n<li>rating</li>\n<li>hereNow - number of people at the venue now</li>\n<li>stats_checkinsCount - total checkins ever here</li>\n<li>stats_usersCount - total users who have ever checked in here</li>\n<li>stats_tipCount - number of tips here</li>\n<li>threshold - input/provided threshold</li>\n<li>range - input/provided range</li>\n<li>venue_id - input/provided ID</li>\n</ul><br>\n\nRates limit: https://developer.foursquare.com/overview/ratelimits",
+  "author": "Dan Dan",
+  "main": "index.js",
+  "keywords": [
+    "Location"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/FoursquareIsHereNow.png",
+    "rawData": [
+      {
+        "parameter": "venueName",
+        "dataType": "string"
+      },
+      {
+        "parameter": "address",
+        "dataType": "string"
+      },
+      {
+        "parameter": "verified",
+        "dataType": "boolean"
+      },
+      {
+        "parameter": "hereNowCount",
+        "dataType": "integer"
+      },
+      {
+        "parameter": "stats_checkinsCount",
+        "dataType": "integer"
+      },
+      {
+        "parameter": "stats_usersCount",
+        "dataType": "integer"
+      },
+      {
+        "parameter": "stats_tipCount",
+        "dataType": "integer"
+      },
+      {
+        "parameter": "phone",
+        "dataType": "double"
+      },
+      {
+        "parameter": "rating",
+        "dataType": "double"
+      },
+      {
+        "parameter": "threshold",
+        "dataType": "double"
+      },
+      {
+        "parameter": "range",
+        "dataType": "double"
+      },
+      {
+        "parameter": "venue_id",
+        "dataType": "double"
+      }
+    ],
+    "requiredProperties": [
+      "venue_id",
+      "foursquare_client_id",
+      "foursquare_client_secret",
+      "isHereNow_threshold",
+      "isHereNow_range"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Above",
+      "In Range",
+      "Below"
+    ]
+  }
+}

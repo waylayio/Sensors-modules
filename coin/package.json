@@ -1,0 +1,25 @@
+{
+  "name": "@waylay/coin",
+  "version": "1.0.1",
+  "description": "Coin sensor generates one of two states: HEADS or TAILS \nbased on a random value . \nIt also returns the random value (randomValue) as the raw data.\n",
+  "author": "Piet Vandaele",
+  "main": "index.js",
+  "keywords": [
+    "Experimental"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/coin.png",
+    "rawData": [
+      {
+        "parameter": "randomValue",
+        "dataType": "double"
+      }
+    ],
+    "requiredProperties": [],
+    "requiredRawData": [],
+    "supportedStates": [
+      "HEADS",
+      "TAILS"
+    ]
+  }
+}

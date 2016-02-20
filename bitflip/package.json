@@ -1,0 +1,20 @@
+{
+  "name": "@waylay/bitflip",
+  "version": "0.0.2",
+  "description": "Flipping bit\n\nAt any tick it flips between zero and one.",
+  "author": "francisdb",
+  "main": "index.js",
+  "keywords": [
+    "Experimental"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/bitflip.png",
+    "rawData": [],
+    "requiredProperties": [],
+    "requiredRawData": [],
+    "supportedStates": [
+      "0",
+      "1"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@waylay/sentiment",
+  "version": "0.0.1",
+  "description": "Sentiment analysis for the provided text.<br/>See <a href=\"https://www.twinword.com/api/sentiment-analysis.php\">twinword</a> for more info<br/>Requires a MASHAPE_KEY<br/>The inputText parameter can handle the waylay expression language.",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "Social"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/sentiment.png",
+    "rawData": [
+      {
+        "parameter": "score",
+        "dataType": "double"
+      },
+      {
+        "parameter": "ratio",
+        "dataType": "double"
+      }
+    ],
+    "requiredProperties": [
+      "inputText"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "postive",
+      "negative",
+      "neutral"
+    ]
+  }
+}

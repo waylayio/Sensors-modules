@@ -1,0 +1,27 @@
+{
+  "name": "@waylay/breachedAccount",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "Security"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/key-icon.png",
+    "rawData": [
+      {
+        "parameter": "data",
+        "dataType": "object[]"
+      }
+    ],
+    "requiredProperties": [
+      "account"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Breached",
+      "Not Breached"
+    ]
+  }
+}

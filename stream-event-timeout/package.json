@@ -1,0 +1,33 @@
+{
+  "name": "@waylay/streamEventTimeout",
+  "version": "0.0.6",
+  "description": "Gives the timeout if the node has not been exectued within a timeout period.\n\nInput paramters are:\n<ul>\n<li>timeout, default 300 seconds</li>\n</ul>\n\nRaw data:\n<ul>\n<li>eventCode</li>\n<li>eventTime</li>\n</ul>\n",
+  "author": "Veselin",
+  "main": "index.js",
+  "keywords": [
+    "Customer"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/hourglass.png",
+    "rawData": [
+      {
+        "parameter": "eventCode",
+        "dataType": "integer"
+      },
+      {
+        "parameter": "eventTime",
+        "dataType": "integer"
+      }
+    ],
+    "requiredProperties": [
+      "timeout"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Critical",
+      "Medium",
+      "Minor",
+      "Clear"
+    ]
+  }
+}

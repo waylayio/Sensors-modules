@@ -1,0 +1,29 @@
+{
+  "name": "@waylay/dice",
+  "version": "1.0.1",
+  "description": "Dice  generates states bewteen ONE and SIX based on\na random value.\n<br>\nRaw Data is a randomValue used to compute the output state.",
+  "author": "Veselin Pizurica",
+  "main": "index.js",
+  "keywords": [
+    "Experimental"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/dice.png",
+    "rawData": [
+      {
+        "parameter": "randomValue",
+        "dataType": "double"
+      }
+    ],
+    "requiredProperties": [],
+    "requiredRawData": [],
+    "supportedStates": [
+      "ONE",
+      "TWO",
+      "THREE",
+      "FOUR",
+      "FIVE",
+      "SIX"
+    ]
+  }
+}

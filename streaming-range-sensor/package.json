@@ -1,0 +1,38 @@
+{
+  "name": "@waylay/streamingRangeSensor",
+  "version": "1.0.2",
+  "description": "Range sensor for the runtime data. \nIt makes use of waylayUtil.getStreamData call.\n\nInput paramters are:\n<ul>\n<li>parameter (runtime name)</li>\n<li>target (value OR runtime parameter)</li>\n<li>range (value OR runtime parameter)</li>\n</ul>\n\nRaw data:\n<ul>\n<li>parameter result</li>\n<li>targetValue</li>\n<li>range</li>\n</ul>\n\n\n",
+  "author": "Veselin",
+  "main": "index.js",
+  "keywords": [
+    "Streaming"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/range.png",
+    "rawData": [
+      {
+        "parameter": "parameter",
+        "dataType": "double"
+      },
+      {
+        "parameter": "target",
+        "dataType": "double"
+      },
+      {
+        "parameter": "range",
+        "dataType": "double"
+      }
+    ],
+    "requiredProperties": [
+      "parameter",
+      "range",
+      "target"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "In Range",
+      "Below",
+      "Above"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@waylay/alwaysONWithOFF",
+  "version": "1.0.1",
+  "description": "The sensor always returns the state ON, but it has two states defined. \nWhen attaching actuators, those actuators will be triggered\nevery time the sensor is invoked. Often used in combination \nwith conditional triggering (and eviction policy).",
+  "author": "Veselin",
+  "main": "index.js",
+  "keywords": [
+    "General"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/alwaysONWithOFF.png",
+    "rawData": [],
+    "requiredProperties": [],
+    "requiredRawData": [],
+    "supportedStates": [
+      "ON",
+      "OFF"
+    ]
+  }
+}

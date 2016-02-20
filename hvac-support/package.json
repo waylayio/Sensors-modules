@@ -1,0 +1,22 @@
+{
+  "name": "@waylay/hvacSupport",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "HVAC"
+  ],
+  "waylay": {
+    "iconURL": "http://www.humanperformancetools.com/wp-content/uploads/2013/05/tech_support_figure_gear-gold_icon_9176.png",
+    "rawData": [],
+    "requiredProperties": [
+      "country"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Found",
+      "Not Found"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@waylay/jenkinsBuildStatus",
+  "version": "1.0.1",
+  "description": "Jenkins sensor\nInput properties are:\n<ul>\n<li>baseUrl (eg https://ci.yourcompany.com)</li>\n<li>username</li>\n<li>token</li>\n</ul>",
+  "author": "francisdb",
+  "main": "index.js",
+  "keywords": [
+    "Experimental"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/jenkins.png",
+    "rawData": [],
+    "requiredProperties": [
+      "baseUrl",
+      "username",
+      "token"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "BLUE",
+      "YELLOW",
+      "RED"
+    ]
+  }
+}

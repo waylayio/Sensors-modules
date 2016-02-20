@@ -1,0 +1,68 @@
+{
+  "name": "@waylay/lifxSensor",
+  "version": "0.0.2",
+  "description": "Lifx sensor\n\nIt returns as raw data:\n<pre>\n{\n    \"id\": \"d3b2f2d97452\",\n    \"uuid\": \"8fa5f072-af97-44ed-ae54-e70fd7bd9d20\",\n    \"label\": \"Left Lamp\",\n    \"connected\": true,\n    \"power\": \"on\",\n    \"color\": {\n      \"hue\": 250.0,\n      \"saturation\": 0.5,\n      \"kelvin\": 3500\n    },\n    \"brightness\": 0.5,\n    \"group\": {\n      \"id\": \"1c8de82b81f445e7cfaafae49b259c71\",\n      \"name\": \"Lounge\"\n    },\n    \"location\": {\n      \"id\": \"1d6fe8ef0fde4c6d77b0012dc736662c\",\n      \"name\": \"Home\"\n    },\n    \"last_seen\": \"2015-03-02T08:53:02.867+00:00\",\n    \"seconds_since_seen\": 0.002869418,\n    \"product\": {\n      \"name\": \"Original 1000\",\n      \"company\": \"LIFX\",\n      \"identifier\": \"lifx_original_1000\",\n      \"capabilities\": {\n        \"has_color\": true,\n        \"has_variable_color_temp\": true\n      }\n    }\n  }\n  </pre>",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "Home"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/lifx.png",
+    "rawData": [
+      {
+        "parameter": "id",
+        "dataType": "string"
+      },
+      {
+        "parameter": "uid",
+        "dataType": "string"
+      },
+      {
+        "parameter": "label",
+        "dataType": "string"
+      },
+      {
+        "parameter": "power",
+        "dataType": "string"
+      },
+      {
+        "parameter": "color",
+        "dataType": "object"
+      },
+      {
+        "parameter": "brightness",
+        "dataType": "double"
+      },
+      {
+        "parameter": "group",
+        "dataType": "object"
+      },
+      {
+        "parameter": "location",
+        "dataType": "object"
+      },
+      {
+        "parameter": "last_seen",
+        "dataType": "string"
+      },
+      {
+        "parameter": "seconds_since_seen",
+        "dataType": "double"
+      },
+      {
+        "parameter": "product",
+        "dataType": "string"
+      }
+    ],
+    "requiredProperties": [
+      "selector",
+      "profile"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "On",
+      "Off"
+    ]
+  }
+}

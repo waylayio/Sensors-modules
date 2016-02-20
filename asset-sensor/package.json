@@ -1,0 +1,22 @@
+{
+  "name": "@waylay/assetSensor",
+  "version": "0.0.8",
+  "description": "",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "HVAC"
+  ],
+  "waylay": {
+    "iconURL": "https://cdn4.iconfinder.com/data/icons/REALVISTA/project_managment/png/128/agency.png",
+    "rawData": [],
+    "requiredProperties": [
+      "id"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Found",
+      "Not Found"
+    ]
+  }
+}

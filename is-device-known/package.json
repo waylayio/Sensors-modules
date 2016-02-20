@@ -1,0 +1,23 @@
+{
+  "name": "@waylay/isDeviceKnown",
+  "version": "0.0.1",
+  "description": "Carriots sensor that gives you the information if a device is registered with platform",
+  "author": "Suat",
+  "main": "index.js",
+  "keywords": [
+    "IOT Platforms"
+  ],
+  "waylay": {
+    "iconURL": "https://avatars0.githubusercontent.com/u/7299477?v=3&s=200",
+    "rawData": [],
+    "requiredProperties": [
+      "device"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Enabled",
+      "Disabled",
+      "Not Found"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@waylay/wazeTravelTime",
+  "version": "0.0.2",
+  "description": "Travel time estimation based on Waze API.",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "Smart City"
+  ],
+  "waylay": {
+    "iconURL": "https://lh3.ggpht.com/7JPOKRuanUwnX42dJ9H-PscC-sRkK43GQGRoklxusB4FKBPJEOJY3c7ZhQbcsXol-v8=w300",
+    "rawData": [],
+    "requiredProperties": [
+      "from",
+      "to"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Found",
+      "Not Found"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@waylay/netatmoWeatherStation",
+  "version": "0.0.6",
+  "description": "Netatmo Weather station\n<pre>\nGo to https://dev.netatmo.com/dev/createapp and create an app\nadd these global settings:\nNETATMO_CLIENT_ID\nNETATMO_CLIENT_SECRET\n\nWe suggest to not use your main account but to share your account to a waylay specific user with less rights (cog button -> invite station guest)\n\nProvide username and password on the sensor level or globally using\nNETATMO_USERNAME\nNETATMO_PASSWORD\n\nSet the moduleName to the device name you want to get data from\n</pre>",
+  "author": "francisdb",
+  "main": "index.js",
+  "keywords": [
+    "Weather"
+  ],
+  "waylay": {
+    "iconURL": "http://static.waylay.io/images/plugs/netatmo.jpg",
+    "rawData": [],
+    "requiredProperties": [
+      "username",
+      "password",
+      "moduleName"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Found",
+      "NotFound"
+    ]
+  }
+}

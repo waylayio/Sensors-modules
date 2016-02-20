@@ -1,0 +1,24 @@
+{
+  "name": "@waylay/sparkVariable",
+  "version": "1.0.1",
+  "description": "Spark sensor, you need access token to run it.\n\nInput parameters are:\n<ul>\n<li>access_token</li>\n<li>device</li>\n<li>variable</li>\n</ul>\n\nRaw data is reponse of the spark for that device and that variable.",
+  "author": "Francis",
+  "main": "index.js",
+  "keywords": [
+    "IOT Platforms"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/spark.png",
+    "rawData": [],
+    "requiredProperties": [
+      "access_token",
+      "device",
+      "variable"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Found",
+      "Not Found"
+    ]
+  }
+}

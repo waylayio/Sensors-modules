@@ -1,0 +1,22 @@
+{
+  "name": "@waylay/scriptSensor",
+  "version": "0.0.9",
+  "description": "Script sensors let you prototype and execute any script without a need to create a specific sensor.\nYou have access to all waylay packages and task context (vai options) like any other sensor.\nPlease be aware that script in the end <strong>must return either send(null, {observedState:\"done\"}) OR send(null, {observedState:\"error\"})</strong>\nYou should return back as the observed states either:\n<ul>\n<li>done</li>\n<li>error</li>\n</ul>\n",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "Functions"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/code.png",
+    "rawData": [],
+    "requiredProperties": [
+      "script"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "done",
+      "error"
+    ]
+  }
+}

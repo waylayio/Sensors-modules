@@ -1,0 +1,84 @@
+{
+  "name": "@waylay/RetrieveHeadNodeSensorsMeasurements",
+  "version": "0.3.0",
+  "description": "Retrieve a collection of sensors' measurements in the Head Node (gateway).<br>\nEndpoint: http://api-synfield.synelixis.com//v1/gateway/{gatewayID}/measurements/<br>\n\n<b>States</b>\n<ul>\n<li>Found: when an owner's sensors' measurements are found.</li>\n<li>Not Found</li>\n</ul><br>\n\n<b>Properties</b>\n<ul>\n<li>authorizationToken (e.g. Basic Z3Vlc3Q...) (if undefined, globalSettings)</li>\n<li>headNode (gateway) (e.g. 00:06:66...) (required)</li>\n<li>offset : integer (optional) (default: 0)</li>\n<li>limit : integer (optional) (default: 500)(</li>\n<li>fromDate yyyy-MM-dd (if both blank, default to yesterday's date)</li>\n<li>untilDate yyyy-MM-dd (if both blank, default to today's date)</li>\n</ul><br>\n\n<b>Raw Data</b> <i>latest measurement = [array.length-1]</i>\n<ul>\n<li>links[]</li>\n<li>batteryMeasures[]</li>\n<li>systemtempMeasures[]</li>\n<li>solarradlevelMeasures[]</li>\n<li>windspeedMeasures[]</li>\n<li>winddirMeasures[]</li>\n<li>rainMeasures[]</li>\n<li>airtempMeasures[]</li>\n<li>airhumidityMeasures[]</li>\n<li>foilmoistureMeasures[]</li>\n<li>soilmoistureMeasures[]</li>\n<li>otherMeasurements[] - all other measurements</li>\n<li>sectionName</li>\n<li>timezone</li>\n</ul><br>",
+  "author": "Dan Dan",
+  "main": "index.js",
+  "keywords": [
+    "SynField"
+  ],
+  "waylay": {
+    "iconURL": "http://www.micronzindia.com/mic_images/mic_icon_organic.png",
+    "rawData": [
+      {
+        "parameter": "links",
+        "dataType": "string[]"
+      },
+      {
+        "parameter": "otherMeasurements",
+        "dataType": "string[]"
+      },
+      {
+        "parameter": "batteryMeasures",
+        "dataType": "string[]"
+      },
+      {
+        "parameter": "systemtempMeasures",
+        "dataType": "string[]"
+      },
+      {
+        "parameter": "solarradlevelMeasures",
+        "dataType": "string[]"
+      },
+      {
+        "parameter": "windspeedMeasures",
+        "dataType": "string[]"
+      },
+      {
+        "parameter": "winddirMeasures",
+        "dataType": "string[]"
+      },
+      {
+        "parameter": "rainMeasures",
+        "dataType": "string[]"
+      },
+      {
+        "parameter": "airhumidityMeasures",
+        "dataType": "string[]"
+      },
+      {
+        "parameter": "airtempMeasures",
+        "dataType": "string[]"
+      },
+      {
+        "parameter": "foilmoistureMeasures",
+        "dataType": "string[]"
+      },
+      {
+        "parameter": "sectionName",
+        "dataType": "string"
+      },
+      {
+        "parameter": "timezone",
+        "dataType": "string"
+      },
+      {
+        "parameter": "soilmoistureMeasures",
+        "dataType": "double"
+      }
+    ],
+    "requiredProperties": [
+      "authorizationToken",
+      "headNode",
+      "offset",
+      "limit",
+      "fromDate",
+      "untilDate"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Found",
+      "Not Found"
+    ]
+  }
+}

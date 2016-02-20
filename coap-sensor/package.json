@@ -1,0 +1,28 @@
+{
+  "name": "@waylay/coapSensor",
+  "version": "0.0.3",
+  "description": "CoAP sensor\n<br>\nExample of input arguments:\n<br>\nserver: coap://coap.me:5683\n<br>\npath : hello\n<br>\nRawData:\n<br>\nvalue returned.",
+  "author": "Veselin",
+  "main": "index.js",
+  "keywords": [
+    "Waylay"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/coap.png",
+    "rawData": [
+      {
+        "parameter": "value",
+        "dataType": "string"
+      }
+    ],
+    "requiredProperties": [
+      "server",
+      "path"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Collected",
+      "Not Collected"
+    ]
+  }
+}

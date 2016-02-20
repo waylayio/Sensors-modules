@@ -1,0 +1,27 @@
+{
+  "name": "@waylay/getJSONFromURL",
+  "version": "0.0.2",
+  "description": "Returns as the raw data JSON from URL.",
+  "author": "",
+  "main": "index.js",
+  "keywords": [
+    "General"
+  ],
+  "waylay": {
+    "iconURL": "https://static.waylay.io/plugs/icons/JSON.png",
+    "rawData": [
+      {
+        "parameter": "data",
+        "dataType": "Object"
+      }
+    ],
+    "requiredProperties": [
+      "url"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Found",
+      "Not Found"
+    ]
+  }
+}

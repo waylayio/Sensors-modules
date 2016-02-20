@@ -1,0 +1,36 @@
+{
+  "name": "@waylay/RetrieveSections",
+  "version": "0.2.3",
+  "description": "Retrieve a collection of sections per user (owner)<br>\r\nEndpoint: http://api-synfield.synelixis.com/v1/sections/owner/{username}<br>\r\n\r\n<b>States</b>\r\n<ul>\r\n<li>Found: when an owner's sections are found.</li>\r\n<li>Not Found</li>\r\n</ul><br>\r\n\r\n<b>Properties</b>\r\n<ul>\r\n<li>username (e.g. guest) (if undefined, globalSettings)</li>\r\n<li>authorizationToken (e.g. Basic Z3Vlc3Q...) (if undefined, globalSettings)</li>\r\n</ul><br>\r\n\r\n<b>Raw Data</b>\r\n<ul>\r\n<li>sections[] - array of section objects</li>\r\n<li>sectionsStr - JSON string of sections </li>\r\n<li>headNodes[] - array of headNodes of each section</li>\r\n</ul><br>",
+  "author": "Dan Dan",
+  "main": "index.js",
+  "keywords": [
+    "SynField"
+  ],
+  "waylay": {
+    "iconURL": "http://www.micronzindia.com/mic_images/mic_icon_organic.png",
+    "rawData": [
+      {
+        "parameter": "sections",
+        "dataType": "string[]"
+      },
+      {
+        "parameter": "headNodes",
+        "dataType": "string[]"
+      },
+      {
+        "parameter": "sectionsStr",
+        "dataType": "double"
+      }
+    ],
+    "requiredProperties": [
+      "username",
+      "authorizationToken"
+    ],
+    "requiredRawData": [],
+    "supportedStates": [
+      "Found",
+      "Not Found"
+    ]
+  }
+}
