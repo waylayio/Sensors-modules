@@ -19,5 +19,8 @@
       "Below",
       "Above"
     ]
+  },
+  "dependencies": {
+    "unirest": "^0.4.2"
   }
 }

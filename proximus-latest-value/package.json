@@ -23,5 +23,8 @@
       "Collected",
       "Not Collected"
     ]
+  },
+  "dependencies": {
+    "request": "^2.67.0"
   }
 }

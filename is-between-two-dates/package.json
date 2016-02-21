@@ -55,5 +55,8 @@
       "Before",
       "After"
     ]
+  },
+  "dependencies": {
+    "@waylay/sandbox-util": "^1.0.1"
   }
 }

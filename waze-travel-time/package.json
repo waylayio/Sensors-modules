@@ -19,5 +19,8 @@
       "Found",
       "Not Found"
     ]
+  },
+  "dependencies": {
+    "unirest": "^0.4.2"
   }
 }

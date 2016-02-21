@@ -23,5 +23,8 @@
       "Alive",
       "NotAlive"
     ]
+  },
+  "dependencies": {
+    "unirest": "^0.4.2"
   }
 }

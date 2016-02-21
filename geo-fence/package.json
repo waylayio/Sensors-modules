@@ -44,5 +44,9 @@
       "IN",
       "OUT"
     ]
+  },
+  "dependencies": {
+    "@waylay/sandbox-util": "^1.0.1",
+    "unirest": "^0.4.2"
   }
 }

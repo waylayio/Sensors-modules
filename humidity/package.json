@@ -52,5 +52,8 @@
       "Normal",
       "Low"
     ]
+  },
+  "dependencies": {
+    "request": "^2.67.0"
   }
 }

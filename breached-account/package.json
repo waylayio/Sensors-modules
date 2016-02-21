@@ -23,5 +23,8 @@
       "Breached",
       "Not Breached"
     ]
+  },
+  "dependencies": {
+    "request": "^2.67.0"
   }
 }

@@ -20,5 +20,8 @@
       "Not Found",
       "Not Supported"
     ]
+  },
+  "dependencies": {
+    "mysql": "^2.10.2"
   }
 }

@@ -20,5 +20,9 @@
       "Found",
       "NotFound"
     ]
+  },
+  "dependencies": {
+    "request": "^2.67.0",
+    "lodash": "^4.0.0"
   }
 }

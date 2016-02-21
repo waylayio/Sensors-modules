@@ -16,5 +16,8 @@
       "Found",
       "Not Found"
     ]
+  },
+  "dependencies": {
+    "mssql": "^3.0.0"
   }
 }

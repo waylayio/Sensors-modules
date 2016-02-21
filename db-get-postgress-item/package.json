@@ -18,5 +18,8 @@
       "Found",
       "Not Found"
     ]
+  },
+  "dependencies": {
+    "pg": "^4.4.3"
   }
 }

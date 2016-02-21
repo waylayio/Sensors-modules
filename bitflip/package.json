@@ -16,5 +16,8 @@
       "0",
       "1"
     ]
+  },
+  "dependencies": {
+    "@waylay/sandbox-util": "^1.0.1"
   }
 }

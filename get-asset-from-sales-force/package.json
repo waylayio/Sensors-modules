@@ -55,5 +55,9 @@
       "Found",
       "Not Found"
     ]
+  },
+  "dependencies": {
+    "@waylay/sandbox-util": "^1.0.1",
+    "jsforce": "^1.5.1"
   }
 }

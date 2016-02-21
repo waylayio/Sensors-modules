@@ -29,5 +29,8 @@
       "Minor",
       "Clear"
     ]
+  },
+  "dependencies": {
+    "@waylay/sandbox-util": "^1.0.1"
   }
 }

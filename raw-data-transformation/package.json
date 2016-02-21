@@ -18,5 +18,9 @@
       "done",
       "error"
     ]
+  },
+  "dependencies": {
+    "lodash": "^4.0.0",
+    "@waylay/sandbox-util": "^1.0.1"
   }
 }

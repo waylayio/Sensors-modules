@@ -24,5 +24,8 @@
       "Collected",
       "Not Collected"
     ]
+  },
+  "dependencies": {
+    "coap": "^0.13.0"
   }
 }

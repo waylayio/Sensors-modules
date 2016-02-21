@@ -37,5 +37,8 @@
       "All",
       "Not Found"
     ]
+  },
+  "dependencies": {
+    "@waylay/sandbox-util": "^1.0.1"
   }
 }

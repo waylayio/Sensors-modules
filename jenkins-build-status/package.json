@@ -21,5 +21,9 @@
       "YELLOW",
       "RED"
     ]
+  },
+  "dependencies": {
+    "lodash": "^4.0.0",
+    "request": "^2.67.0"
   }
 }

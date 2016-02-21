@@ -55,5 +55,8 @@
       "TRUE",
       "FALSE"
     ]
+  },
+  "dependencies": {
+    "moment-timezone": "^0.5.0"
   }
 }

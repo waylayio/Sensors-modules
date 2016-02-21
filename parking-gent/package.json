@@ -46,5 +46,10 @@
       "MEDIUM",
       "CRITICAL"
     ]
+  },
+  "dependencies": {
+    "@waylay/sandbox-util": "^1.0.1",
+    "request": "^2.67.0",
+    "lodash": "^4.0.0"
   }
 }
